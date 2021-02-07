@@ -1,0 +1,31 @@
+body {
+	background-color: #8B4513;
+}
+
+#principal {
+	height: 70vh;
+	background-color: #BDB76B;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#principal h1 {
+	margin-top: 100px;
+	font-size: 50px;
+	padding: 50px;
+}
+
+#principal a {
+	text-decoration: none;
+	padding: 10px;
+	color: #000;
+	font-size: 20px;
+}
+
+#principal a:hover{
+	background-color:#8B4513;
+	color: #FFF;
+	border-radius: 40%;
+	text-decoration: underline;
+}
