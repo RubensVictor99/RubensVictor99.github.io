@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<a href="index.html">Página Inicial</a>
+	<h1>Formulário</h1>
+	<form action="http://191.252.62.149:8080/pweb/salvar.jsp">
+		Login:<br/>
+		<input type="text" name="login" value="login"><br/>
+		Senha:<br/>
+		<input type="password" name="senha" value="senha"><br/>
+		Confirme a senha:<br/>
+		<input type="password" value="confirmarsenha" name="confirmesenha"><br/>
+		Nome:<br/>
+		<input type="text" name="nome" value="nome"><br/>
+		Email:<br/>
+		<input type="email" name="email" value="email"><br/>
+		Sexo:<br/>
+		<input type="radio" name="masculino" value="Masculino">Masculino<br/>
+		<input type="radio" name="feminino" value="Feminino">Feminino<br/>
+		Interesses:<br/>
+		<input type="checkbox" name="interesses" value="esportes">Esportes<br/>
+		<input type="checkbox" name="interesses" value="politica">Política<br/>
+		<input type="checkbox" name="interesses" value="economia">Economia<br/>
+		<input type="checkbox" name="interesses" value="veiculos">Veículos<br/>
+		<input type="checkbox" name="interesses" value="celebridades">Celebridades<br/>
+		<br/>
+
+		Estado:<br/>
+		<select name="Estado">
+			<option name="" selected></option>
+			<option name="PI" value="piaui">Piauí</option>
+			<option name="CE" value="ceara">Ceará</option>
+			<option name="MA" value="maranhao">Maranhão</option>
+		</select>
+		<br/>	
+		Observações: <br/>
+		<textarea name="Observacao"></textarea><br/>
+
+
+
+
+		<input type="submit" value="Enviar">
+		
+	</form>
+</body>
+</html>
