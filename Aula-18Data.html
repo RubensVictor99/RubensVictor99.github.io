@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Aula 18</title>
+
+	<script type="text/javascript">
+		function mostravalor(componente) {
+			var valor = componente.getAttribute('data-idade');
+			alert(valor);
+		}
+
+	</script>
+
+	<style type="text/css">
+		.pessoa{
+			color: red;
+		}
+
+		.pessoa[data-idade='20']{
+			color: blue;
+		}
+		.pessoa::before{
+			content: 'Nome:';
+		} 
+
+		.pessoa::after{
+			content: '   -   ' 'Idade:'attr(data-idade) '   -   ' 'Cpf:' attr(data-cpf) ;
+		
+		}
+
+
+
+
+	</style>
+
+
+</head>
+<body>
+	<ul>
+		<li class="pessoa" onclick="mostravalor(this)"  data-idade="15" data-cpf="653453-155" >Pedro</li>
+		<li class="pessoa" onclick="mostravalor(this)"  data-idade="20" data-cpf="545654-345" >Maria</li>
+		<li class="pessoa" onclick="mostravalor(this)"  data-idade="25" data-cpf="453565-625" >Breno</li>
+	</ul>
+
+</body>
+</html>
